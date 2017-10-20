@@ -13,44 +13,52 @@
 
 
     </style>
-    <div id ="Principale">
-        <div id="PosFlex1" class="PosFlex">
-            <!--
-        <div class="clsTableau">
-            <div class="header">
-                <h2>Param1</h2>
-                <div class ="divAdd">
-                    <input type="text" id="InputTitre1" placeholder="Titre...">
-                    <span onclick="newElement(1)" class="addBtn">Add</span>
+    <header>
+
+        <h1>DOMHUS</h1>
+    </header>
+    <div id="Principale">
+        <div id="divParam">
+            <div id="divBloc">
+                <div id="PosFlex1" class="PosFlex">
+                </div>
+                <div id="PosFlex2" class="PosFlex">
+                </div>
+                <div id="bouton">
+<!--                    <button onclick="setStorage()">Set Storage</button>-->
+<!--                    <button onclick="getStorage()">Get Storage</button>-->
+                    <button onclick="reset()">Reset</button>
+                    <button onclick="clickLien()"><a href = "#lien">Lien</a></button>
+                    <button onclick="clickResetLien()"><a href = "#lien">reset Lien</a></button>
                 </div>
             </div>
-            <ul id="monUL1">
-            </ul>
+            <a name="lien"></a>
+            <div id="divLien1" class="pasvisible">
+                <div id="divLien">
+                </div>
+                <div id="tableauLien" class="pasvisible">
+                </div>
+                <footer><span onclick="creationTableauLien()">Tableau</span><span onclick="fermerLien()">Fermer</span></footer>
+            </div>
         </div>
--->
+        <div id="divScrollLien" class="pasvisible">
+            <div id="guillemet">
+                <div onclick="scrollMoins()" class="caractMaxi guillemet">&lsaquo;</div>
+                <div id="scrollLien" class="caractMoyen">lien</div>
+                <div onclick="scrollPlus()" class="caractMaxi guillemet">&rsaquo;</div>
+            </div>
+            <div id="choix">
+                <div id="choixX" onclick="choixX()" class="caractMaxi">X</div>
+                <div id="choixLien" onclick="choixLien()" class="caractMaxi">lien</div>
+            </div>
+            <footer>
+                <span onclick="fermerScrollLien()">Fermer</span></footer>
         </div>
-        <div id="PosFlex2" class="PosFlex">
-
-
-        </div>
-        <div id="test">
-            <button onclick="setStorage()">Set Storage</button>
-            <button onclick="getStorage()">Get Storage</button>
-            <button onclick="reset()">Reset</button>
-            <button onclick="clickLien()"><a href = "#lien">Lien ?</a></button>
-        </div>
-        
-        <a name ="lien"></a>
-        <div id="divLien">
-        
-        
-        
-        </div>
-        
-        
-        
     </div>
+
     <script>
+
+
     </script>
 
     <script src="script.js"></script>
