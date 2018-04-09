@@ -19,7 +19,6 @@ function createCloseButton() {
         span.appendChild(txt);
         myNodelist[i].appendChild(span);
     }
-
 }
 /*Gere le onclick sur la fermeture des balises li (croix)*/
 function closeOnclick(close) {
