@@ -107,8 +107,10 @@ function creationclsParam(idPosFlex, i, titre) {
     chk.setAttribute("id", "chk" + i);
 
     itemchk = JSON.parse(localStorage.getItem('Domhus_chk'));
-    if (itemchk.chk[i - 1]) {
-        chk.setAttribute("checked", true);
+    if (itemchk) {
+        if (itemchk.chk[i - 1]) {
+            chk.setAttribute("checked", true);
+        }
     }
 
     chk.addEventListener('click', function () {
